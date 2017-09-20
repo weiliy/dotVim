@@ -5,6 +5,8 @@ My vim config and notes
 
 ```
 clone git@github.com:weiliy/dotVim.git ~/.vim
+cd ~/.vim
+make
 ```
 
 

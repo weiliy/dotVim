@@ -10,3 +10,8 @@ if has("autocmd")
     filetype on
     autocmd FileType javascript setlocal ts=4 sts=4 sw=4 et
 endif
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'ngloss/vim-javascript'
+call plug#end()
