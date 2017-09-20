@@ -1,6 +1,12 @@
 # vim
 My vim config and notes
 
+## Install 
+
+```
+clone git@github.com:weiliy/dotVim.git ~/.vim
+```
+
 
 ## Intend
 
