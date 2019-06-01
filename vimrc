@@ -17,5 +17,5 @@ endif
 
 
 call plug#begin('~/.vim/plugged')
-Plug 'ngloss/vim-javascript'
+Plug 'pangloss/vim-javascript'
 call plug#end()
