@@ -26,6 +26,8 @@ nnoremap K :Ag <C-R><C-W> <CR>
 " set filetypes as typescript.jsx
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.jsx
 
+filetype plugin indent on
+
 if has("autocmd")
     filetype on
     autocmd FileType javascript setlocal ts=2 sts=2 sw=2 et autoindent
@@ -34,16 +36,24 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.yaml.j2 set syntax=yaml
 endif
 
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
+
 call plug#begin('~/.vim/plugged')
+" Language Support
 Plug 'pangloss/vim-javascript'
 Plug 'stephpy/vim-yaml'
 Plug 'mxw/vim-jsx'
 Plug 'posva/vim-vue'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+" Satl SLS file support
+Plug 'saltstack/salt-vim'
 Plug 'w0rp/ale'
 " fzf
-Plug '/usr/local/opt/fzf'
+" Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
+Plug 'mileszs/ack.vim'
 call plug#end()
