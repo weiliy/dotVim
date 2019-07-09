@@ -56,4 +56,8 @@ Plug 'w0rp/ale'
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'mileszs/ack.vim'
+" JSON-Schema
+Plug 'Quramy/vison'
+" jinja
+Plug 'lepture/vim-jinja'
 call plug#end()
