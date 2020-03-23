@@ -19,3 +19,9 @@ Simple just copy the intend of last line
 ```
 set autointend
 ```
+
+## Know Issue
+
+### Failed to install FZF on ubuntu
+
+Follow [How to install and use FZF](https://codeyarns.com/2017/10/24/how-to-install-and-use-fzf/)
